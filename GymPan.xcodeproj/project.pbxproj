@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1029104525BACCDC00C92AC5 /* Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1029104425BACCDC00C92AC5 /* Font.ttf */; };
 		1066BEF025BAC109006315DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066BEEF25BAC109006315DD /* AppDelegate.swift */; };
 		1066BEF225BAC109006315DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066BEF125BAC109006315DD /* SceneDelegate.swift */; };
 		1066BEF425BAC109006315DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066BEF325BAC109006315DD /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1029104425BACCDC00C92AC5 /* Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Font.ttf; sourceTree = "<group>"; };
 		1066BEEC25BAC109006315DD /* GymPan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymPan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1066BEEF25BAC109006315DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1066BEF125BAC109006315DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1029103B25BACC8A00C92AC5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1029104425BACCDC00C92AC5 /* Font.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		1066BEE325BAC109006315DD = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		1066BEEE25BAC109006315DD /* GymPan */ = {
 			isa = PBXGroup;
 			children = (
+				1029103B25BACC8A00C92AC5 /* Fonts */,
 				1066BEEF25BAC109006315DD /* AppDelegate.swift */,
 				1066BEF125BAC109006315DD /* SceneDelegate.swift */,
 				1066BEF325BAC109006315DD /* ViewController.swift */,
@@ -234,6 +245,7 @@
 				1066BEFC25BAC10A006315DD /* LaunchScreen.storyboard in Resources */,
 				1066BEF925BAC10A006315DD /* Assets.xcassets in Resources */,
 				1066BEF725BAC109006315DD /* Main.storyboard in Resources */,
+				1029104525BACCDC00C92AC5 /* Font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
