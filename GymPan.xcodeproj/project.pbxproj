@@ -16,6 +16,9 @@
 		1066BEFC25BAC10A006315DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1066BEFA25BAC10A006315DD /* LaunchScreen.storyboard */; };
 		1066BF0725BAC10B006315DD /* GymPanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066BF0625BAC10B006315DD /* GymPanTests.swift */; };
 		1066BF1225BAC10B006315DD /* GymPanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066BF1125BAC10B006315DD /* GymPanUITests.swift */; };
+		10C11AA925C0527B0071E56C /* ButtonCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C11AA825C0527B0071E56C /* ButtonCornerRadius.swift */; };
+		10C11AAE25C067520071E56C /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C11AAD25C067520071E56C /* ThreeViewController.swift */; };
+		10C11AB325C0680F0071E56C /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C11AB225C0680F0071E56C /* TwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		1066BF0D25BAC10B006315DD /* GymPanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymPanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1066BF1125BAC10B006315DD /* GymPanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymPanUITests.swift; sourceTree = "<group>"; };
 		1066BF1325BAC10B006315DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10C11AA825C0527B0071E56C /* ButtonCornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCornerRadius.swift; sourceTree = "<group>"; };
+		10C11AAD25C067520071E56C /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		10C11AB225C0680F0071E56C /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,9 @@
 				1066BEF125BAC109006315DD /* SceneDelegate.swift */,
 				1066BEF325BAC109006315DD /* ViewController.swift */,
 				1066BEF525BAC109006315DD /* Main.storyboard */,
+				10C11AB225C0680F0071E56C /* TwoViewController.swift */,
+				10C11AAD25C067520071E56C /* ThreeViewController.swift */,
+				10C11AA825C0527B0071E56C /* ButtonCornerRadius.swift */,
 				1066BEF825BAC10A006315DD /* Assets.xcassets */,
 				1066BEFA25BAC10A006315DD /* LaunchScreen.storyboard */,
 				1066BEFD25BAC10A006315DD /* Info.plist */,
@@ -270,9 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C11AA925C0527B0071E56C /* ButtonCornerRadius.swift in Sources */,
 				1066BEF425BAC109006315DD /* ViewController.swift in Sources */,
 				1066BEF025BAC109006315DD /* AppDelegate.swift in Sources */,
 				1066BEF225BAC109006315DD /* SceneDelegate.swift in Sources */,
+				10C11AAE25C067520071E56C /* ThreeViewController.swift in Sources */,
+				10C11AB325C0680F0071E56C /* TwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
