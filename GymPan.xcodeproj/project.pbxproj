@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1029104525BACCDC00C92AC5 /* Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1029104425BACCDC00C92AC5 /* Font.ttf */; };
+		1048BC9025D688B100CC32CB /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048BC8F25D688B100CC32CB /* OneViewController.swift */; };
+		1048BC9525D68BD900CC32CB /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048BC9425D68BD900CC32CB /* FourViewController.swift */; };
+		1048BC9A25D68F3600CC32CB /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048BC9925D68F3600CC32CB /* FiveViewController.swift */; };
 		1066BEF025BAC109006315DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066BEEF25BAC109006315DD /* AppDelegate.swift */; };
 		1066BEF225BAC109006315DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066BEF125BAC109006315DD /* SceneDelegate.swift */; };
 		1066BEF425BAC109006315DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066BEF325BAC109006315DD /* ViewController.swift */; };
@@ -40,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		1029104425BACCDC00C92AC5 /* Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Font.ttf; sourceTree = "<group>"; };
+		1048BC8F25D688B100CC32CB /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		1048BC9425D68BD900CC32CB /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		1048BC9925D68F3600CC32CB /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 		1066BEEC25BAC109006315DD /* GymPan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymPan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1066BEEF25BAC109006315DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1066BEF125BAC109006315DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +126,9 @@
 				1066BEF125BAC109006315DD /* SceneDelegate.swift */,
 				1066BEF325BAC109006315DD /* ViewController.swift */,
 				1066BEF525BAC109006315DD /* Main.storyboard */,
+				1048BC9925D68F3600CC32CB /* FiveViewController.swift */,
+				1048BC9425D68BD900CC32CB /* FourViewController.swift */,
+				1048BC8F25D688B100CC32CB /* OneViewController.swift */,
 				10C11AB225C0680F0071E56C /* TwoViewController.swift */,
 				10C11AAD25C067520071E56C /* ThreeViewController.swift */,
 				10C11AA825C0527B0071E56C /* ButtonCornerRadius.swift */,
@@ -284,6 +293,9 @@
 				1066BEF025BAC109006315DD /* AppDelegate.swift in Sources */,
 				1066BEF225BAC109006315DD /* SceneDelegate.swift in Sources */,
 				10C11AAE25C067520071E56C /* ThreeViewController.swift in Sources */,
+				1048BC9025D688B100CC32CB /* OneViewController.swift in Sources */,
+				1048BC9525D68BD900CC32CB /* FourViewController.swift in Sources */,
+				1048BC9A25D68F3600CC32CB /* FiveViewController.swift in Sources */,
 				10C11AB325C0680F0071E56C /* TwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

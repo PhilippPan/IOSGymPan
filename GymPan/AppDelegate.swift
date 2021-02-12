@@ -8,6 +8,8 @@
 import UIKit
 
 var gender: String = "woman"
+var userHeight: String = "0"
+var userWeight: String = "0"
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

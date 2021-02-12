@@ -14,10 +14,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--One View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="GymPan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="OneViewController" customModule="GymPan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +52,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="LossAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ORt-j1-gB4"/>
+                                    <action selector="LossAction:" destination="gEx-Jf-zZc" eventType="touchUpInside" id="tHh-Ui-IHb"/>
                                     <segue destination="3l6-Tn-rVg" kind="show" id="8Nr-wk-FUl"/>
                                 </connections>
                             </button>
@@ -70,6 +72,11 @@
                                         <integer key="value" value="39"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="FitAction:" destination="gEx-Jf-zZc" eventType="touchUpInside" id="GeW-yx-697"/>
+                                    <action selector="FitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fPC-bH-hEA"/>
+                                    <segue destination="3l6-Tn-rVg" kind="show" id="ORB-2b-IW0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BD0-l8-nRE">
                                 <rect key="frame" x="67" y="586" width="284" height="77"/>
@@ -86,14 +93,25 @@
                                         <integer key="value" value="39"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="MusculeAction:" destination="gEx-Jf-zZc" eventType="touchUpInside" id="3Qh-Bw-qPb"/>
+                                    <action selector="MusculeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yrP-gR-1gi"/>
+                                    <segue destination="3l6-Tn-rVg" kind="show" id="UkS-Z0-lgA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="Blue"/>
                     </view>
                     <navigationItem key="navigationItem" id="lxX-jo-IMn"/>
+                    <connections>
+                        <outlet property="buttonFit" destination="obb-JY-7bL" id="FdE-x4-uOq"/>
+                        <outlet property="buttonLoss" destination="tkF-aZ-LVw" id="1tQ-kV-71p"/>
+                        <outlet property="buttonMuscule" destination="BD0-l8-nRE" id="eHI-de-6gv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="gEx-Jf-zZc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="17" y="125"/>
         </scene>
@@ -222,6 +240,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="HandsAction:" destination="3cL-cX-Lro" eventType="touchUpInside" id="7vV-ff-mZi"/>
                                     <segue destination="bub-gu-gFK" kind="show" id="1S2-i5-WTb"/>
                                 </connections>
                             </button>
@@ -246,6 +265,10 @@
                                         <integer key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SpineAction:" destination="3cL-cX-Lro" eventType="touchUpInside" id="J6t-5U-xU2"/>
+                                    <segue destination="bub-gu-gFK" kind="show" id="DeH-K5-skr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXf-i2-XUO">
                                 <rect key="frame" x="54" y="513" width="172" height="46"/>
@@ -261,6 +284,10 @@
                                         <integer key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="TorsoAction:" destination="3cL-cX-Lro" eventType="touchUpInside" id="aOU-Lo-Kn5"/>
+                                    <segue destination="bub-gu-gFK" kind="show" id="Fsd-KU-gSz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oln-RJ-Xyj">
                                 <rect key="frame" x="54" y="588" width="172" height="46"/>
@@ -276,6 +303,10 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="LegsAction:" destination="3cL-cX-Lro" eventType="touchUpInside" id="Wvk-4k-8JV"/>
+                                    <segue destination="bub-gu-gFK" kind="show" id="34h-3x-jml"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line1" translatesAutoresizingMaskIntoConstraints="NO" id="9qX-vs-Btb">
                                 <rect key="frame" x="225" y="393" width="126.5" height="15"/>
@@ -299,6 +330,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ig2-Vq-gR5"/>
                     <connections>
+                        <outlet property="btnHands" destination="Hwc-RT-C2u" id="5gk-Z0-2pA"/>
+                        <outlet property="btnLegs" destination="oln-RJ-Xyj" id="UhF-XI-ah4"/>
+                        <outlet property="btnSpine" destination="0Vg-5h-7E8" id="pVa-cP-XXz"/>
+                        <outlet property="btnTorso" destination="PXf-i2-XUO" id="MaJ-bc-c8O"/>
                         <outlet property="genderPicture" destination="E33-lk-9eI" id="qEH-0O-OUo"/>
                     </connections>
                 </viewController>
@@ -306,10 +341,10 @@
             </objects>
             <point key="canvasLocation" x="1540.5797101449277" y="124.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Five View Controller-->
         <scene sceneID="Mgm-Yc-rPG">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Mk0-xy-5cd" customClass="ViewController" customModule="GymPan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Mk0-xy-5cd" customClass="FiveViewController" customModule="GymPan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Kh-GX-jxX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,6 +378,9 @@
                                         <integer key="value" value="39"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="setUserHWAction:" destination="Mk0-xy-5cd" eventType="touchUpInside" id="ocV-cy-BL3"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpc-N7-D2Y">
                                 <rect key="frame" x="51" y="375" width="312" height="50.5"/>
@@ -385,21 +423,25 @@
                         <color key="backgroundColor" name="Blue"/>
                     </view>
                     <navigationItem key="navigationItem" id="cH6-jQ-mqa"/>
+                    <connections>
+                        <outlet property="txtHeigh" destination="cyy-NX-4Nl" id="9yt-dQ-lCt"/>
+                        <outlet property="txtWeight" destination="Wbe-iZ-7JL" id="e7h-oP-8B2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bm8-bq-a7h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3066.666666666667" y="124.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Four View Controller-->
         <scene sceneID="AhA-nQ-UVX">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="bub-gu-gFK" customClass="ViewController" customModule="GymPan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="bub-gu-gFK" customClass="FourViewController" customModule="GymPan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="INj-O1-QQx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step 4/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpM-4R-tGj">
-                                <rect key="frame" x="114" y="176" width="186" height="50"/>
+                                <rect key="frame" x="114" y="176" width="189" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="NDAstroneer" family="ND Astroneer" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -441,6 +483,9 @@
                                         <integer key="value" value="39"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="NewbieAction:" destination="bub-gu-gFK" eventType="touchUpInside" id="JuA-Ap-psg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMu-G3-9TK">
                                 <rect key="frame" x="68" y="434" width="284" height="77"/>
@@ -471,6 +516,9 @@
                                         <integer key="value" value="39"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="KeepOnAction:" destination="bub-gu-gFK" eventType="touchUpInside" id="Jbw-lL-TOB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="psq-Ra-KPD">
                                 <rect key="frame" x="66" y="529" width="284" height="77"/>
@@ -501,6 +549,9 @@
                                         <integer key="value" value="39"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AdvancedAction:" destination="bub-gu-gFK" eventType="touchUpInside" id="egB-NP-pHv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkQ-gr-Tcf">
                                 <rect key="frame" x="68" y="663" width="284" height="77"/>
@@ -526,10 +577,15 @@
                         <color key="backgroundColor" name="Blue"/>
                     </view>
                     <navigationItem key="navigationItem" id="CWb-Pg-qk9"/>
+                    <connections>
+                        <outlet property="bntKeepOn" destination="hMu-G3-9TK" id="nmo-vp-Awp"/>
+                        <outlet property="btnAdvanced" destination="psq-Ra-KPD" id="i5p-UY-om4"/>
+                        <outlet property="btnNewbie" destination="3iQ-h9-1By" id="NeB-GZ-pBX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JFR-7q-3qe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2329" y="125"/>
+            <point key="canvasLocation" x="2328.985507246377" y="124.55357142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BeL-f3-ciR">
@@ -641,6 +697,10 @@
             <point key="canvasLocation" x="-765" y="125"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="34h-3x-jml"/>
+        <segue reference="8Nr-wk-FUl"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Head" width="16" height="15"/>
         <image name="Pass" width="15.5" height="18"/>
